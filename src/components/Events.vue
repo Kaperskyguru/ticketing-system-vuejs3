@@ -11,10 +11,8 @@ import { mapState, useStore } from "vuex";
 export default {
   name: "Events",
   components: { Event },
-
   setup() {
     const store = useStore();
-    // console.log(store.state.events);
     return {
       events: computed(() => store.state.events),
     };
